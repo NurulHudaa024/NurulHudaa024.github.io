@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTP-8">
+        <title>Rool Ice Cream Website Landing Page</title>
+        <link rel="stylesheet" href="stylep.css">
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="#"><img src="images/logofactory.webp" class="logo"></a>
+                <ul>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">What's News</a></li>
+                            <li><a href="#">Contact</a></li>  
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textbox">
+                    <h2>ROLL ICE CREAM <br>It's <span> FACTORY</span></h2>
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad veniam,
+                        quist nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                        <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="images/image1.png" class="factory">
+                
+            </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="images/thumb1.gif" onclick="imgSlider('images/image1.png');changeCircleColor('#42297a')"></li>
+                <li><img src="images/thumb2.gif" onclick="imgSlider('images/image2.png');changeCircleColor('#42297a')"></li>
+                <li><img src="images/thumb3.gif" onclick="imgSlider('images/image3.png');changeCircleColor('#42297a')"></li>
+            </ul>
+            <ul class="sci">
+                <li><a href="#"><img src="images/facebook.png"></a></li>
+                <li><a href="#"><img src="images/twitter.png" ></a></li>
+                <li><a href="#"><img src="images/instagram.png"></a></li>
+                </ul>
+        </section>
+
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.factory').src = anything;
+            }
+
+            function changeCircleColor(color){
+                const circle = document.querySelector('.circle');
+                circle.style.background = color;
+            }
+        </script>
+    </body>
+</html>
